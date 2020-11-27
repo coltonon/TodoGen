@@ -33,7 +33,7 @@ Short   Long            Desc
 * Edit `PATH` environment variable to include wherever you put `todogen.exe`.
 
 ### Linux:
-* Clone the repo, if using GCC, you must have 8+ for `std::filesystem` to work.  Check with `G++ --version`, cmake should block you from using < 8.
+* Clone the repo, if using GCC, you must have 8+ for `std::filesystem` to work.  Check with `g++ --version`, cmake should block you from using < 8.
 * `cmake . && make`
 * Move to /usr/bin/gcc if you want
 
