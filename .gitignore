@@ -33,6 +33,7 @@ bld/
 # Exclude binaries
 *.pdb
 *.exe
+*.elf
 *.vcxproj.user
 *.obj
 *.log

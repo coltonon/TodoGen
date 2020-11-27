@@ -25,11 +25,11 @@ public:
 			std::filesystem::path relPath = std::filesystem::relative(srcFile.fileName, this->pSrcBrowser->topDirectory);
 
 			std::wstring fixedPath = StringUtil::FixSlashes(relPath);
-			ss << L"\n## [" << fixedPath << "](" << fixedPath << ")\n";
+			ss << L"\n## [" << fixedPath << "](/" << fixedPath << ")\n";
 
+			ss << L"|Line|Message|\n|---|---|\n";
 			for (const TodoItem& todo : srcFile.items) {
-				ss << L"|Line|Message|\n|---|---|\n";
-				ss << L"| [" << todo.lineNumber << L"]("<< fixedPath << L"#L"<< todo.lineNumber << L") | " << todo.message << " |\n";
+				ss << L"| [" << todo.lineNumber << L"](/"<< fixedPath << L"#L"<< todo.lineNumber << L") | " << todo.message << " |\n";
 			}
 		}
 
