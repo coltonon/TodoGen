@@ -27,9 +27,9 @@ public:
 			std::wstring fixedPath = StringUtil::FixSlashes(relPath);
 			ss << L"\n## [" << fixedPath << "](/" << fixedPath << ")\n";
 
-			ss << L"|Line|Message|\n|---|---|\n";
+			ss << L"|Line|Message|\n|---|---|" << std::endl;
 			for (const TodoItem& todo : srcFile.items) {
-				ss << L"| [" << todo.lineNumber << L"](/"<< fixedPath << L"#L"<< todo.lineNumber << L") | " << todo.message << " |\n";
+				ss << L"| [" << todo.lineNumber << L"](/"<< fixedPath << L"#L"<< todo.lineNumber << L") | " << todo.message.substr(0, todo.message.size() - 1) << " |" << std::endl;
 			}
 		}
 
