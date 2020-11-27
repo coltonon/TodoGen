@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Generators">
+      <UniqueIdentifier>{3b2c56b4-6b9a-417e-afd9-f502c33c28bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TodoGen">
+      <UniqueIdentifier>{ef5f0048-f9fe-4c67-9643-1a5c696a37a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{1cf2cc66-0def-43f3-8d30-57b561d24ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TodoGen">
+      <UniqueIdentifier>{e07f9657-fe2c-4a5d-92ee-8ed5c7fae523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generators">
+      <UniqueIdentifier>{e37659f9-f1c9-4ab3-bff5-42c9b6751b1a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LangDef.cpp">
+      <Filter>Source Files\TodoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceBrowser.cpp">
+      <Filter>Source Files\TodoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile.cpp">
+      <Filter>Source Files\TodoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoItem.cpp">
+      <Filter>Source Files\TodoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Source Files\Generators</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsoleGenerator.hpp">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.hpp">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonGenerator.hpp">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkdownGenerator.hpp">
+      <Filter>Header Files\Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="LangDef.hpp">
+      <Filter>Header Files\TodoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile.hpp">
+      <Filter>Header Files\TodoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoItem.hpp">
+      <Filter>Header Files\TodoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Rang.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Nullable.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CliArgs.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceBrowser.hpp">
+      <Filter>Header Files\TodoGen</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintBool.hpp">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramOptions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoGen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
