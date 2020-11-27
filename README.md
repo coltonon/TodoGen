@@ -8,4 +8,4 @@ If using as a build script for github, add `todogen.exe`'s directory to your PAT
 todogen.exe -g
 ```
 
-Capable of generating reports in Markdown, JSON, or plain console 
+Capable of generating reports in Markdown, JSON, or plain console.  See example output [here](/docs/todo.md)
