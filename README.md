@@ -25,3 +25,12 @@ Short   Long            Desc
 -c      --console               Output results for Console Usage
 -j      --json          Output results as a JSON object
 ```
+
+## Building:
+
+### Windows:
+* Clone the repo, open the .sln in Visual Studio and build.
+
+### Linux:
+* Clone the repo, if using GCC, you must have 8+ for `std::filesystem` to work.
+* `cmake . && make`
