@@ -22,10 +22,10 @@ public:
 			// get the relative path of the selected file
 			std::filesystem::path relPath = std::filesystem::relative(srcFile.fileName, this->pSrcBrowser->topDirectory);
 
-			ss << L"File: " << StringUtil::FixSlashes(relPath) << std::endl;
+			ss << "File: " << StringUtil::FixSlashes(relPath) << std::endl;
 
 			for (const TodoItem& todo : srcFile.items) {
-				ss << L"\tLine: " << todo.lineNumber << L": " << todo.message << std::endl;
+				ss << "\tLine: " << todo.lineNumber << ": " << todo.message << std::endl;
 			}
 		}
 

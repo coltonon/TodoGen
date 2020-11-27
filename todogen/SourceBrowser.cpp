@@ -23,7 +23,7 @@ SourceBrowser::SourceBrowser(const std::filesystem::path& searchPath)
 			if (fileRead) this->totalFilesRead++;
 
 			if (fileRead && ProgramOptions::GetInstance()()->verbose) {
-				std::wcout << L"Reading File: " << dirEntry.path() << std::endl;
+				std::wcout << "Reading File: " << dirEntry.path() << std::endl;
 			}
 
 			// if there were Todo items found, push it into the vector

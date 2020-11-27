@@ -13,12 +13,12 @@ void showHelpScreen() {
 	std::wcout << "-g\t--git\t\tSame as -m & -w, useful for Visual Studio build events" << std::endl;
 
 	std::wcout << std::endl << rang::fgB::magenta << "Generators:" << REND;
-	std::wcout << rang::fgB::green << L"Short\tLong\t\tDesc" << REND;
+	std::wcout << rang::fgB::green << "Short\tLong\t\tDesc" << REND;
 
 	for (Generator* pGen : Generator::Generators) {
 		Generator::Info info = pGen->getGenInfo();
-		std::wcout << info.cmdlineNames[0] << L"\t" << info.cmdlineNames[1] << L"\t";
-		if (info.cmdlineNames[1].length() > 4) std::wcout << L"\t";
+		std::wcout << info.cmdlineNames[0] << "\t" << info.cmdlineNames[1] << "\t";
+		if (info.cmdlineNames[1].length() > 4) std::wcout << "\t";
 		std::wcout << info.description << std::endl;
 	}
 }

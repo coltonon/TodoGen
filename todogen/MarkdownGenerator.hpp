@@ -15,7 +15,7 @@ public:
 
 	virtual std::wstring getText() override {
 		std::wstringstream ss;
-		ss << L"# Todo Tracker\n\n";
+		ss << "# Todo Tracker\n\n";
 		ss << Generator::GetGenMessage() << "\n\n";
 
 		for (const SourceFile& srcFile : this->pSrcBrowser->sourceFiles) {
@@ -25,11 +25,11 @@ public:
 			std::filesystem::path relPath = std::filesystem::relative(srcFile.fileName, this->pSrcBrowser->topDirectory);
 
 			std::wstring fixedPath = StringUtil::FixSlashes(relPath);
-			ss << L"\n## [" << fixedPath << "](/" << fixedPath << ")\n";
+			ss << "\n## [" << fixedPath << "](/" << fixedPath << ")\n";
 
-			ss << L"|Line|Message|\n|---|---|" << std::endl;
+			ss << "|Line|Message|\n|---|---|" << std::endl;
 			for (const TodoItem& todo : srcFile.items) {
-				ss << L"| [" << todo.lineNumber << L"](/"<< fixedPath << L"#L"<< todo.lineNumber << L") | " << todo.message.substr(0, todo.message.size() - 1) << " |" << std::endl;
+				ss << "| [" << todo.lineNumber << "](/"<< fixedPath << "#L"<< todo.lineNumber << ") | " << todo.message.substr(0, todo.message.size() - 1) << " |" << std::endl;
 			}
 		}
 
