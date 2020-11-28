@@ -3,7 +3,7 @@
 
 
 void showHelpScreen() {
-
+	 
 	// show options
 	std::wcout << rang::fgB::magenta << "Options:" << REND;
 	std::wcout << rang::fgB::green << "Short\tLong\t\tDesc" << REND;
@@ -14,7 +14,7 @@ void showHelpScreen() {
 
 	std::wcout << std::endl << rang::fgB::magenta << "Generators:" << REND;
 	std::wcout << rang::fgB::green << "Short\tLong\t\tDesc" << REND;
-
+	
 	for (Generator* pGen : Generator::Generators) {
 		Generator::Info info = pGen->getGenInfo();
 		std::wcout << info.cmdlineNames[0] << "\t" << info.cmdlineNames[1] << "\t";
@@ -38,7 +38,7 @@ int wmain(int argc, wchar_t** argv) {
 
 	std::wcout << rang::fgB::cyan << "Todo Generator " << RCOLOR_LOG << "v" << TOOL_VERSION << REND << std::endl;
 
-	if (args.hasFlag(L"-h", L"--help")) {
+	if (args.size() == 1 || args.hasFlag(L"-h", L"--help")) {
 		showHelpScreen();
 		return 0;
 	}
